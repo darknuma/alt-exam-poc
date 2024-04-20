@@ -123,12 +123,12 @@ SELECT * FROM OrderEvents;
 -- question 1 (return location and checkot count of successful orders)
 SELECT 
 	c.location,
-	count( e.event_data ->> 'event_type' = 'checkout')AS checkout_count
+	count( e.event_data::jsonb ->> 'event_type' = 'checkout')AS checkout_count
 FROM events e 
 JOIN 
 	customers c on c.customer_id = e.customer_id 
 WHERE 
-	e.event_data ->> 'status' = 'success'
+	e.event_data::jsonb ->> 'status' = 'success'
 group by 
  	c.location
 ORDER BY
