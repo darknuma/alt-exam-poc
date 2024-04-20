@@ -4,7 +4,7 @@
 
 ## Part 1
 
-Based on the table diagrams provided, you're expected to complete the creation of tables in `infra_setup.sql` and also the loading of data int these tables. Note that you cannot proceed to answers questions in part two of this assesment if you do not setup and load the tables
+Based on the table diagrams provided, you're expected to complete the creation of tables in `infra_setup.sql` and also the loading of data into these tables. Note that you cannot proceed to answers questions in part two of this assesment if you do not setup and load the tables
 
 ## Part 2a
 
